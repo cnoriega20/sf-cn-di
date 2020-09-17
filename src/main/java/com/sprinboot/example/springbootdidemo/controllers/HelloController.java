@@ -1,13 +1,14 @@
 package com.sprinboot.example.springbootdidemo.controllers;
 
 import com.sprinboot.example.springbootdidemo.services.GreetingService;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
 @Controller
 public class HelloController {
     private GreetingService greetingService;
 
-    public HelloController(GreetingService greetingService) {
+    public HelloController(@Qualifier("greetingServiceImpl") GreetingService greetingService) {
         this.greetingService = greetingService;
     }
 
