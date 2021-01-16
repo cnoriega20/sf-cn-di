@@ -3,3 +3,10 @@ cn:
     username: cnor20k
     password: xx$xxxjms.
     githuburl: https://github.com
+
+---
+spring:
+  profiles: de
+  cn:
+    jms:
+      username: cnor_Deutcsh
